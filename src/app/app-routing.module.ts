@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'contatti',
+    loadChildren: () => import('./contatti/contatti.module').then( m => m.ContattiPageModule)
+  },
 ];
 
 @NgModule({

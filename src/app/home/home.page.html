@@ -1,20 +1,96 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
   </div>
+
+  <!-- Pulsanti -->
+  <ion-list>
+    <ion-item button detail="false">
+      <ion-label>
+        <a href="https://supporto.computersoftware.it/lp2/" target="_blank">
+          <div class="box">
+            <img src="assets/appuntamento.png" alt="Richiedi appuntamento" />
+          </div>
+          <div class="text">
+            <h2>Richiesta Appuntamento</h2>
+            <p>Richiesta Appuntamento per Assistenza/Formazione</p>
+          </div>
+        </a>
+      </ion-label>
+    </ion-item>
+    <ion-item button detail="false">
+        <ion-label>
+        <a href="https://www.portaleargo.it/auth/sso/login" target="_blank">
+          <div class="box">
+            <img src="assets/telefonata.png" alt="Assistenza Telefonica" />
+          </div>
+          <div class="text">
+            <h2>Assistenza Telefonica</h2>
+            <p>Richiesta Assistenza Telefonica/Teleassistenza (Argo Help)</p>
+          </div>
+        </a>
+      </ion-label>
+    </ion-item>
+    <ion-item button detail="false">
+      <ion-label>
+        <a href="https://supportoclienti.argosoft.it/guide/" target="_blank">
+          <div class="box">
+            <img src="assets/guide.png" alt="Guide" />
+          </div>
+          <div class="text">
+            <h2>Guide</h2>
+            <p>Guide Sintetiche Applicativi Argo</p>
+          </div>
+        </a>
+      </ion-label>
+    </ion-item>
+    <ion-item button detail="false">
+      <ion-label>
+        <a href="https://supportoclienti.argosoft.it/news/" target="_blank">
+          <div class="box">
+            <img src="assets/news.png" alt="News" />
+          </div>
+          <div class="text">
+            <h2>News</h2>
+            <p>Ultime News Argo</p>
+          </div>
+        </a>
+      </ion-label>
+    </ion-item>
+    <ion-item button detail="false" [routerLink]="'/contatti'" routerLinkActive="active">
+      <ion-label>
+        <div class="box">
+          <img src="assets/contattaci.png" alt="Contattaci" />
+        </div>
+        <div class="text">
+          <h2>Contatta</h2>
+          <p>Contatta l'amministrazione</p>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="social-links">
+      <ion-col class="wp">
+        <a href="https://api.whatsapp.com/send?phone=0817144465" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </ion-col>
+      <ion-col class="fb">
+        <a href="https://www.facebook.com/computersoftwaresrl" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </ion-col>
+      <ion-col class="ig">
+        <a href="https://www.instagram.com/direzionescuola/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

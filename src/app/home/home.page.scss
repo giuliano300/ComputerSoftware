@@ -1,27 +1,108 @@
-#container {
+ion-content {
+  background: linear-gradient(to bottom, #fff, #f1f1f2);
+}
+
+.logo-container {
   text-align: center;
+  margin-top: 0px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.logo {
+  max-width: 100%;
+  height: auto;
 }
 
-#container p {
+ion-list {
+  margin: 20px 20px 0 15px;
+  background: none;
+}
+
+ion-item {
+  --background: #f4f4f4;
+  --color: #272727;
+  margin: 18px 0;
+  border-radius: 10px;
+  --inner-border-width: 0;
+}
+
+.footer-ios ion-toolbar:first-of-type{
+  --border-width: 0!important;
+  --background: none!important;
+  padding:0 0 20px 0
+}
+
+.social-links {
+  text-align: center;
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.wp a {
+  font-size: 38px;
+  color: #fff; 
+  margin: 0 10px 0 25%;
+  width: 60px;
+  height: 60px;
+  float: left;
+  border-radius: 50%;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background: #12e460;
+}
+
+.fb a{
+  font-size: 38px;
+  color: #fff; 
+  margin: 0 10px 0 25%;
+  width: 60px;
+  height: 60px;
+  float: left;
+  border-radius: 50%;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background: #144aa4!important;
+}
+
+.ig a {
+  font-size: 38px;
+  color: #fff; 
+  margin: 0 10px 0 25%;
+  width: 60px;
+  height: 60px;
+  float: left;
+  border-radius: 50%;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background: #e80071!important;
+}
+
+.box{
+  float: left;
+  width: 24%;
+}
+
+.box img{
+  max-width: 90%;
+  margin: 0 5%;
+}
+
+.text{
+  float: left;
+  width: 76%;
+  padding: 3px 0 3px 2%;
+}
+
+.text h2, a.text h2{
+  font-weight: 600;
+  margin: 2px 0 2px 0;
+  color: #272727;
+  font-size: 18px;
+}
+
+.text p, a.text p{
+  line-height: 20px;
+  color: #272727;
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }
