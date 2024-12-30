@@ -4,7 +4,7 @@ ion-content {
 
 .logo-container {
   text-align: center;
-  margin-top: 0px;
+  margin: 25px 0 10px 0;
 
 }
 
@@ -21,7 +21,7 @@ ion-list {
 ion-item {
   --background: #f4f4f4;
   --color: #272727;
-  margin: 18px 0;
+  margin: 18px 0 25px;
   border-radius: 10px;
   --inner-border-width: 0;
 }
@@ -29,7 +29,7 @@ ion-item {
 .footer-ios ion-toolbar:first-of-type{
   --border-width: 0!important;
   --background: none!important;
-  padding:0 0 20px 0
+  padding:0
 }
 
 .social-links {
@@ -39,44 +39,12 @@ ion-item {
   margin: 0 10%;
 }
 
-.wp a {
-  font-size: 38px;
-  color: #fff; 
-  margin: 0 10px 0 25%;
-  width: 60px;
-  height: 60px;
-  float: left;
-  border-radius: 50%;
-  padding: 10px 0 0 0;
-  text-align: center;
-  background: #12e460;
+.social-links a img{
+  max-width: 90px;
+  width: 90px;
 }
 
-.fb a{
-  font-size: 38px;
-  color: #fff; 
-  margin: 0 10px 0 25%;
-  width: 60px;
-  height: 60px;
-  float: left;
-  border-radius: 50%;
-  padding: 10px 0 0 0;
-  text-align: center;
-  background: #144aa4!important;
-}
 
-.ig a {
-  font-size: 38px;
-  color: #fff; 
-  margin: 0 10px 0 25%;
-  width: 60px;
-  height: 60px;
-  float: left;
-  border-radius: 50%;
-  padding: 10px 0 0 0;
-  text-align: center;
-  background: #e80071!important;
-}
 
 .box{
   float: left;
@@ -91,7 +59,7 @@ ion-item {
 .text{
   float: left;
   width: 76%;
-  padding: 3px 0 3px 2%;
+  padding: 1px 0 3px 2%;
 }
 
 .text h2, a.text h2{

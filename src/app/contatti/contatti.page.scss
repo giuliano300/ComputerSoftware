@@ -1,0 +1,83 @@
+ion-content {
+    background: linear-gradient(to bottom, #fff, #f1f1f2);
+
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin: 25px 0 10px 0;
+  
+  }
+
+  h2{
+    padding: 50px 20px 0;
+    font-weight: 600;
+  }
+
+  ion-input{
+    border: solid 1px #8a8a8a!important;
+    border-radius: 15px;
+    box-shadow: 0 0 0 #fff;
+    --padding-start: 15px;
+    --padding-end: 15px;
+    color: #333;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .input{
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .textarea{
+    height: 150px;
+    font-size: 16px;
+    border: solid 1px #8a8a8a!important;
+    border-radius: 15px;
+    --padding-start: 15px;
+    --padding-end: 15px;
+}
+
+.send{
+    height: 60px;
+    margin: 30px 2.5% 10px;
+    font-size: 18px;
+    border-radius: 15px!important;
+    --background: #143f7d;
+    width: 94%;
+}
+
+  .label {
+    font-size: 18px; 
+    color: #333;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  ion-item{
+    box-shadow: 0 0 0 #fff;
+    border: 0!important;
+    --border-color:#fff;
+    position: relative; 
+  }
+
+  .response-message {
+    margin-top: 20px;
+    padding: 10px;
+    color: green; 
+    width: 100%;
+    text-align: center;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+  }
+
+  ion-checkbox{
+    flex:0;
+    margin-right: 10px;
+  }

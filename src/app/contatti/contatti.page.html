@@ -6,20 +6,30 @@
   <h2>Contattaci</h2>
   <form [formGroup]="contattiForm" (ngSubmit)="onSubmit()">
     <ion-item>
-      <ion-label position="floating">Nome</ion-label>
-      <ion-input formControlName="nome" type="text" required></ion-input>
+      <ion-label position="stacked" class="label">Nome</ion-label>
+      <ion-input formControlName="nome" placeholder="Il tuo nome" type="text" required class="input"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input formControlName="email" type="email" required></ion-input>
+      <ion-label position="stacked" class="label">Email</ion-label>
+      <ion-input formControlName="email" placeholder="la tua email" type="email" required class="input"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Messaggio</ion-label>
-      <ion-textarea formControlName="messaggio" required></ion-textarea>
+      <ion-label position="stacked" class="label">Messaggio</ion-label>
+      <ion-textarea formControlName="messaggio" placeholder="Il tuo messaggio" required class="textarea"></ion-textarea>
     </ion-item>
 
-    <ion-button expand="full" type="submit" [disabled]="!contattiForm.valid">Invia</ion-button>
+    <ion-button type="submit" [disabled]="!contattiForm.valid" class="send">Invia</ion-button>
+
+    <ion-item>
+      <ion-label class="checkbox-label">
+        <ion-checkbox formControlName="accetto" required></ion-checkbox>
+        Accetto i termini e le condizioni
+      </ion-label>
+    </ion-item>
   </form>
+  <div *ngIf="responseMessage" class="response-message">
+    {{ responseMessage }}
+  </div>
 </ion-content>

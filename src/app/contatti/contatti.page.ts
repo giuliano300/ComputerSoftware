@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-contatti',
@@ -10,15 +11,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ContattiPage implements OnInit {
   contattiForm!: FormGroup;
+  responseMessage: string = ''; 
 
 
-  constructor(private router: Router, private formBuilder: FormBuilder) { }
+  constructor(private router: Router, private formBuilder: FormBuilder, private apiService: ApiService) { }
 
   ngOnInit() {
     this.contattiForm = this.formBuilder.group({
-      nome: ['', Validators.required],          // Campo 'nome' obbligatorio
-      email: ['', [Validators.required, Validators.email]],  // Campo 'email' obbligatorio e con validazione email
-      messaggio: ['', Validators.required],     // Campo 'messaggio' obbligatorio
+      nome: ['', Validators.required],        
+      email: ['', [Validators.required, Validators.email]], 
+      messaggio: ['', Validators.required],
+      accetto: [false, Validators.requiredTrue]    
     });
   }
   
@@ -28,7 +31,21 @@ export class ContattiPage implements OnInit {
 
   onSubmit() {
     if (this.contattiForm?.valid) {
-      console.log('Form Submitted', this.contattiForm.value);
+      const formData = this.contattiForm.value;
+
+      this.apiService.sendFormData(formData).subscribe(
+        (response) => {
+           // Svuota i campi del modulo
+           this.contattiForm.reset();
+          
+           // Memorizza la risposta nel div
+           this.responseMessage = 'Messaggio inviato con successo!';
+        },
+        (error) => {
+          console.error('Errore nell\'invio del form:', error);
+          alert('Si è verificato un errore. Riprova.');
+        }
+      );
     } else {
       console.log('Form not valid');
     }
