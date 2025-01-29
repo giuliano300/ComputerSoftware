@@ -10,7 +10,7 @@ export class ApiService {
 
   // Funzione per inviare i dati al server (API)
   sendFormData(formData: any): Observable<any> {
-    const apiUrl = 'http://localhost:58065/api/Experts/SendEmail'; 
+    const apiUrl = 'https://api.supporto.computersoftware.it/api/Experts/SendEmail'; 
     return this.http.post(apiUrl, formData);
   }
 }

@@ -1,23 +1,34 @@
 ion-content {
-    background: linear-gradient(to bottom, #fff, #f1f1f2);
-
+  --background:url("/assets/bg.png") no-repeat top center;
   }
   
   .logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:url("/assets/bg.png") no-repeat top center;
+    z-index: 1000;
+    padding: 20px 0; 
     text-align: center;
-    margin: 25px 0 10px 0;
-  
+    border-bottom: solid 1px #ddd;
   }
+  
+  .logo {
+    max-width: 80%;
+    height: auto;
+  }
+  
 
   h2{
-    padding: 50px 20px 0;
+    padding: 110px 20px 0;
     font-weight: 600;
   }
 
   ion-input{
-    border: solid 1px #8a8a8a!important;
+    border: solid 1px #d4d4d4!important;
     border-radius: 15px;
-    box-shadow: 0 0 0 #fff;
+    box-shadow: 0px 5px 15px #eee;
     --padding-start: 15px;
     --padding-end: 15px;
     color: #333;
@@ -34,7 +45,7 @@ ion-content {
   .textarea{
     height: 150px;
     font-size: 16px;
-    border: solid 1px #8a8a8a!important;
+    border: solid 1px #d4d4d4!important;
     border-radius: 15px;
     --padding-start: 15px;
     --padding-end: 15px;
@@ -50,17 +61,18 @@ ion-content {
 }
 
   .label {
-    font-size: 18px; 
+    font-size: 20px; 
     color: #333;
-    margin-top: 20px;
+    margin: 20px 0 15px;
     font-weight: 600;
   }
   
   ion-item{
     box-shadow: 0 0 0 #fff;
     border: 0!important;
-    --border-color:#fff;
+    --border-color:transparent;
     position: relative; 
+    --background:transparent;
   }
 
   .response-message {
