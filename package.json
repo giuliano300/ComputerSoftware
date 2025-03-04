@@ -1,5 +1,5 @@
 {
-  "name": "myApp",
+  "name": "Cs Gest",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -25,6 +25,7 @@
     "@capacitor/app": "6.0.2",
     "@capacitor/core": "^6.2.0",
     "@capacitor/haptics": "6.0.2",
+    "@capacitor/ios": "6.2.0",
     "@capacitor/keyboard": "6.0.3",
     "@capacitor/status-bar": "6.0.2",
     "@ionic/angular": "^8.0.0",
@@ -64,5 +65,5 @@
     "rimraf": "^6.0.1",
     "typescript": "~5.6.3"
   },
-  "description": "An Ionic project"
+  "description": "Progetto cs Gest"
 }

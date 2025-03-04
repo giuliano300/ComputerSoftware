@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.csgest.app;
 
 import com.getcapacitor.BridgeActivity;
 
