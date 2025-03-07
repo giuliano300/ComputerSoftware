@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ios",
+    "\\ios\\App"
   ],
-  "SelectedNode": "\\C:\\Progetti\\Direttore\\App",
+  "SelectedNode": "\\ios\\App\\Podfile",
   "PreviewInSolutionExplorer": false
 }
